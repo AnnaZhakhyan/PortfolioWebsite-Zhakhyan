@@ -9,20 +9,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <div class="container section hero">
+    <!-- HERO SECTION -->
+    <section id="hero" class="container section hero">
         <div>
             <h1>
                 Software Engineering<br>
@@ -32,17 +34,122 @@
                 Hi, I’m Anna — a software engineering student at Fontys University of Applied Sciences
                 with a strong interest in game development, mobile apps, and thoughtful web design.
             </p>
-            <a class="button" href="projects.html">View my work</a>
+            <a class="button" href="#projects">View my work</a>
         </div>
 
         <div class="polaroid animate">
             <img src="images/me.jpg" alt="Portfolio photo">
             <span>Anna, probably right before debugging</span>
         </div>
-        
-    </div>
-    <script src="script.js"></script>
+    </section>
 
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="container section">
+        <h1>Selected Projects</h1>
+
+        <!-- PROJECT 1 -->
+        <div class="card project-card rotate animate">
+            <div class="polaroid small">
+                <img src="images/drifttherift.png" alt="Drift the Rift">
+                <span>Drift the Rift</span>
+            </div>
+            <div class="project-text">
+                <h2>Drift the Rift</h2>
+                <p>Card-based fantasy mobile game inspired by a D&D campaign. I worked on gameplay mechanics, character design, and documentation.</p>
+                <p><strong>Tech:</strong> GDScript, JavaScript, Godot</p>
+                <a class="button" href="#">View project</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="card project-card animate">
+            <div class="polaroid small">
+                <img src="images/homecooked.png" alt="Homecooked">
+                <span>Homecooked</span>
+            </div>
+            <div class="project-text">
+                <h2>Homecooked</h2>
+                <p>iOS application connecting students and food lovers through shared home-cooked meals. Focused on cookout creation and UX.</p>
+                <p><strong>Tech:</strong> Swift, TypeScript</p>
+                <a class="button" href="#">View project</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="card project-card rotate animate">
+            <div class="polaroid small">
+                <img src="images/songify.png" alt="Songify">
+                <span>Songify</span>
+            </div>
+            <div class="project-text">
+                <h2>Songify</h2>
+                <p>Music streaming platform prototype with front-end and server-side logic.</p>
+                <p><strong>Tech:</strong> HTML, CSS, PHP</p>
+                <a class="button" href="#">View project</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="card project-card animate">
+            <div class="polaroid small">
+                <img src="images/flightbooking.png" alt="Flight Booking App">
+                <span>Flight Booking</span>
+            </div>
+            <div class="project-text">
+                <h2>Flight Booking Application</h2>
+                <p>Desktop booking system using object-oriented programming and unit testing.</p>
+                <p><strong>Tech:</strong> Java, SQL</p>
+                <a class="button" href="#">View project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="container section">
+        <h1>Skills & Tools</h1>
+
+        <div class="card animate">
+            <h2>Programming</h2>
+            <ul>
+                <li>HTML & CSS (advanced)</li>
+                <li>JavaScript (intermediate)</li>
+                <li>Java (intermediate)</li>
+                <li>GDScript (advanced)</li>
+                <li>Swift (beginner)</li>
+                <li>SQL & PHP</li>
+            </ul>
+        </div>
+
+        <div class="card rotate animate">
+            <h2>Tools</h2>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>Godot Engine</li>
+                <li>VS Code, IntelliJ, Xcode</li>
+                <li>Figma</li>
+            </ul>
+        </div>
+
+        <div class="card animate">
+            <h2>Other</h2>
+            <ul>
+                <li>Game development</li>
+                <li>Object-oriented programming</li>
+                <li>Agile / Scrum teamwork</li>
+                <li>Cybersecurity fundamentals</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="container section contact-info animate">
+        <h1>Let’s Connect</h1>
+        <p>Email: a.zhakhyan@student.fontys.nl</p>
+        <p>Location: Venlo, Netherlands</p>
+        <p>GitHub: <a href="https://github.com/AnnaZhakhyan">github.com/AnnaZhakhyan</a></p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

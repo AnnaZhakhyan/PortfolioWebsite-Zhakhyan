@@ -1,4 +1,6 @@
-/* ===== RESET & GLOBAL ===== */
+/* =====================
+   RESET & GLOBAL
+===================== */
 * {
     box-sizing: border-box;
 }
@@ -10,9 +12,14 @@ body {
     color: #283618;
     line-height: 1.7;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 
-/* ===== NAVIGATION ===== */
+/* =====================
+   NAVIGATION
+===================== */
 nav {
     padding: 30px 40px;
     display: flex;
@@ -29,7 +36,41 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ===== LAYOUT ===== */
+/* ===== SCROLL NAVBAR ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    gap: 25px;
+    background-color: rgba(254, 250, 224, 0.85);
+    /* soft paper blur */
+    backdrop-filter: blur(8px);
+    transform: translateY(-100%);
+    transition: transform 0.4s ease;
+    z-index: 1000;
+}
+
+.navbar.show {
+    transform: translateY(0);
+}
+
+.hero.fade {
+    opacity: 0.25;
+    transform: translateY(-60px);
+    pointer-events: none;
+}
+body.nav-visible {
+    padding-top: 80px;
+}
+
+
+
+/* =====================
+   LAYOUT
+===================== */
 .container {
     max-width: 1000px;
     margin: auto;
@@ -40,65 +81,42 @@ nav a:hover {
     margin: 80px 0;
 }
 
-/* ===== HERO ===== */
+/* =====================
+   TYPOGRAPHY
+===================== */
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #606C38;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* =====================
+   HERO
+===================== */
 .hero {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
     gap: 40px;
     align-items: center;
+    min-height: 100vh;
 }
-
-.hero h1 {
-    font-size: 3.2rem;
-    line-height: 1.1;
-}
-
 
 .hero span {
     color: #BC6C25;
     font-style: italic;
 }
 
-/* ===== CARDS ===== */
-.card {
-    background-color: #ffffff;
-    border-radius: 22px;
-    padding: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    position: relative;
-}
-
-.card.rotate {
-    transform: rotate(-1deg);
-}
-
-/* ===== POLAROID IMAGE PLACEHOLDER ===== */
-.polaroid {
-    background: #fff;
-    padding: 15px 15px 40px;
-    border-radius: 18px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    text-align: center;
-}
-
-.polaroid img {
-    width: 100%;
-    border-radius: 12px;
-}
-
-/* ===== HEADINGS ===== */
-h1, h2 {
-    font-family: 'Playfair Display', serif;
-    color: #606C38;
-}
-
-
-h2 {
-    margin-top: 0;
-}
-
-/* ===== BUTTONS ===== */
+/* =====================
+   BUTTONS
+===================== */
 .button {
     display: inline-block;
     margin-top: 15px;
@@ -108,59 +126,115 @@ h2 {
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    transition: transform 0.2s ease;
+    transition: transform 0.25s ease;
 }
 
 .button:hover {
     transform: rotate(-2deg) scale(1.05);
 }
 
-/* ===== LISTS ===== */
-ul {
-    padding-left: 20px;
+/* =====================
+   CARDS
+===================== */
+.card {
+    background-color: #ffffff;
+    border-radius: 22px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    position: relative;
 }
 
-/* ===== CONTACT ===== */
-.contact-info p {
+/* subtle background accent — OPTION B */
+.card::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    width: 70px;
+    height: 70px;
+    background-color: #DDA15E;
+    opacity: 0.18;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.card>* {
+    position: relative;
+    z-index: 1;
+}
+
+.card.rotate {
+    transform: rotate(-1deg);
+}
+
+/* =====================
+   PROJECT LAYOUT
+===================== */
+.project-card {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.project-text p {
     margin: 8px 0;
+    max-width: 520px;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 800px) {
-    .hero {
-        grid-template-columns: 1fr;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
+/* =====================
+   POLAROID
+===================== */
 .polaroid {
-    background: #fff;
-    padding: 15px 15px 45px;
-    border-radius: 18px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    background: #ffffff;
+    padding: 12px 12px 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     text-align: center;
-    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+}
+
+.polaroid:hover {
+    transform: rotate(-3deg) scale(1.04);
 }
 
 .polaroid img {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 10px;
+}
+
+/* smaller decorative version */
+.polaroid.small {
+    max-width: 220px;
+    transform: rotate(-2deg);
 }
 
 .polaroid span {
     display: block;
-    margin-top: 12px;
-    font-size: 0.9rem;
+    margin-top: 10px;
+    font-size: 0.85rem;
     font-style: italic;
     color: #606C38;
 }
-img{
-    border-radius: 8px;
-max-width:  450px; ;}
 
+/* =====================
+   LISTS
+===================== */
+ul {
+    padding-left: 20px;
+}
+
+/* =====================
+   CONTACT
+===================== */
+.contact-info p {
+    margin: 8px 0;
+}
+
+/* =====================
+   ANIMATIONS (SCROLL)
+===================== */
 .animate {
     opacity: 0;
     transform: translateY(40px);
@@ -173,3 +247,21 @@ max-width:  450px; ;}
 }
 
 
+@media (max-width: 800px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .polaroid.small {
+        margin: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
