@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Anna Zhakhyan</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,7 +24,7 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section id="hero" class="container section hero">
         <div>
             <h1>
@@ -37,75 +38,83 @@
             <a class="button" href="#projects">View my work</a>
         </div>
 
-        <div class="polaroid animate">
-            <img src="images/me.jpg" alt="Portfolio photo">
+        <div class="polaroid me-polaroid animate">
+             <img src="images/me.jpg" alt="Anna Zhakhyan">
             <span>Anna, probably right before debugging</span>
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
+    <!-- PROJECTS -->
     <section id="projects" class="container section">
-        <h1>Selected Projects</h1>
 
-        <!-- PROJECT 1 -->
-        <div class="card project-card rotate animate">
-            <div class="polaroid small">
+        <h1>Projects</h1>
+
+        <!-- FEATURED PROJECTS -->
+        <h2 class="section-label">Featured</h2>
+
+        <div class="card project-card featured animate">
+            <div class="polaroid large">
                 <img src="images/drifttherift.png" alt="Drift the Rift">
                 <span>Drift the Rift</span>
             </div>
+
             <div class="project-text">
                 <h2>Drift the Rift</h2>
-                <p>Card-based fantasy mobile game inspired by a D&D campaign. I worked on gameplay mechanics, character design, and documentation.</p>
+                <p>
+                    Card-based fantasy mobile game inspired by a D&D campaign.
+                    I worked on gameplay mechanics, character design, and documentation.
+                </p>
                 <p><strong>Tech:</strong> GDScript, JavaScript, Godot</p>
                 <a class="button" href="#">View project</a>
             </div>
         </div>
 
-        <!-- PROJECT 2 -->
-        <div class="card project-card animate">
-            <div class="polaroid small">
-                <img src="images/homecooked.png" alt="Homecooked">
-                <span>Homecooked</span>
-            </div>
-            <div class="project-text">
-                <h2>Homecooked</h2>
-                <p>iOS application connecting students and food lovers through shared home-cooked meals. Focused on cookout creation and UX.</p>
-                <p><strong>Tech:</strong> Swift, TypeScript</p>
-                <a class="button" href="#">View project</a>
-            </div>
-        </div>
-
-        <!-- PROJECT 3 -->
-        <div class="card project-card rotate animate">
-            <div class="polaroid small">
-                <img src="images/songify.png" alt="Songify">
-                <span>Songify</span>
-            </div>
-            <div class="project-text">
-                <h2>Songify</h2>
-                <p>Music streaming platform prototype with front-end and server-side logic.</p>
-                <p><strong>Tech:</strong> HTML, CSS, PHP</p>
-                <a class="button" href="#">View project</a>
-            </div>
-        </div>
-
-        <!-- PROJECT 4 -->
-        <div class="card project-card animate">
-            <div class="polaroid small">
+        <div class="card project-card featured animate">
+            <div class="polaroid large">
                 <video src="images/CityExplorer.mp4" autoplay muted loop playsinline></video>
                 <span>City Explorer</span>
             </div>
-            
+
             <div class="project-text">
-                <h2>City Explorer website</h2>
-                <p>Website which allows the user to explore the ways and culture of a few selected cities..</p>
-                <p><strong>Tech:</strong> Html, CSS, JavaScript</p>
+                <h2>City Explorer Website</h2>
+                <p>
+                    Interactive website allowing users to explore culture, routes,
+                    and highlights of selected cities.
+                </p>
+                <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
                 <a class="button" href="#">View project</a>
             </div>
         </div>
+
+        <!-- OTHER PROJECTS -->
+        <h2 class="section-label">Other Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="mini-project animate">
+                <img src="images/homecooked.png" alt="Homecooked">
+                <h3>Homecooked</h3>
+                <p>
+                    iOS app connecting students and food lovers through shared
+                    home-cooked meals.
+                </p>
+                <p><strong>Tech:</strong> Swift, TypeScript</p>
+            </div>
+
+            <div class="mini-project animate">
+                <img src="images/songify.png" alt="Songify">
+                <h3>Songify</h3>
+                <p>
+                    Music streaming platform prototype with front-end and
+                    server-side logic.
+                </p>
+                <p><strong>Tech:</strong> HTML, CSS, PHP</p>
+            </div>
+
+        </div>
     </section>
 
-    <!-- SKILLS SECTION -->
+    <!-- SKILLS -->
     <section id="skills" class="container section">
         <h1>Skills & Tools</h1>
 
@@ -142,12 +151,17 @@
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
+    <!-- CONTACT -->
     <section id="contact" class="container section contact-info animate">
         <h1>Let’s Connect</h1>
         <p>Email: a.zhakhyan@student.fontys.nl</p>
         <p>Location: Venlo, Netherlands</p>
-        <p>GitHub: <a href="https://github.com/AnnaZhakhyan">github.com/AnnaZhakhyan</a></p>
+        <p>
+            GitHub:
+            <a href="https://github.com/AnnaZhakhyan" target="_blank">
+                github.com/AnnaZhakhyan
+            </a>
+        </p>
     </section>
 
     <script src="script.js"></script>
