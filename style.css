@@ -211,3 +211,15 @@ h1 {
         margin: auto;
     }
 }
+footer {
+    margin-top: 80px;
+    padding: 10px;
+    background: #606C38;
+    color: #FEFAE0;
+    text-align: left;
+}
+
+footer a {
+    color: #DDA15E;
+    text-decoration: none;
+}
