@@ -13,7 +13,7 @@ const observer = new IntersectionObserver(entries => {
 animatedElements.forEach(el => observer.observe(el));
 
 
-// ===== HERO -> NAV TRANSITION =====
+// ===== NAV TRANSITION =====
 const navbar = document.querySelector('.navbar');
 const hero = document.querySelector('.hero');
 
@@ -31,3 +31,17 @@ window.addEventListener('scroll', () => {
     }
     
 });
+document.addEventListener('mousemove', (e) => {
+    const segment = document.createElement('div');
+    segment.className = 'trail-segment';
+    
+    segment.style.left = `${e.pageX}px`;
+    segment.style.top = `${e.pageY}px`;
+    
+    document.body.appendChild(segment);
+    
+    setTimeout(() => {
+      segment.remove();
+    }, 500);
+  });
+  
