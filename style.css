@@ -1,6 +1,4 @@
-/* =====================
-   RESET & GLOBAL
-===================== */
+
 * {
     box-sizing: border-box;
 }
@@ -16,10 +14,14 @@ body {
     color: #283618;
     line-height: 1.7;
 }
+.hero-buttons{
+    display:flex;
+    gap:18px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
 
-/* =====================
-   NAVIGATION
-===================== */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -43,9 +45,7 @@ body {
     text-decoration: underline;
 }
 
-/* =====================
-   LAYOUT
-===================== */
+
 .hero {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -64,9 +64,7 @@ body {
     margin: 80px 0;
 }
 
-/* =====================
-   TYPOGRAPHY
-===================== */
+
 h1,
 h2,
 h3 {
@@ -84,9 +82,7 @@ h1 {
     color: #BC6C25;
 }
 
-/* =====================
-   BUTTONS
-===================== */
+
 .button {
     display: inline-block;
     margin-top: 15px;
@@ -103,9 +99,7 @@ h1 {
     transform: rotate(-2deg) scale(1.05);
 }
 
-/* =====================
-   CARDS
-===================== */
+
 .card {
     background-color: #ffffff;
     border-radius: 22px;
@@ -121,9 +115,7 @@ h1 {
     align-items: center;
 }
 
-/* =====================
-   POLAROID (IMAGES & VIDEOS)
-===================== */
+
 .polaroid {
     background: #ffffff;
     padding: 12px 12px 32px;
@@ -157,9 +149,7 @@ h1 {
     color: #606C38;
 }
 
-/* =====================
-   MINI PROJECTS GRID
-===================== */
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -185,9 +175,7 @@ h1 {
     margin-bottom: 12px;
 }
 
-/* =====================
-   ANIMATIONS
-===================== */
+
 .animate {
     opacity: 0;
     transform: translateY(40px);
@@ -199,9 +187,7 @@ h1 {
     transform: translateY(0);
 }
 
-/* =====================
-   RESPONSIVE
-===================== */
+
 @media (max-width: 800px) {
     .project-card {
         grid-template-columns: 1fr;
