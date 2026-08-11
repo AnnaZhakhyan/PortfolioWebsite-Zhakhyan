@@ -17,178 +17,651 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- navbar -->
     <nav class="navbar">
         <a href="#hero">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- HERO -->
+
     <section id="hero" class="container section hero">
-       <div>
+        <div>
 
-    <h1>
-        Software Engineering<br>
-        & <span>Game Design</span>
-    </h1>
+            <h1>
+                Software Engineering<br>
+                & <span>Game Design</span>
+            </h1>
 
-    <p>
-        Hi, I'm Anna — a software engineering student at Fontys University of Applied Sciences
-        with a strong interest in game development, mobile apps, and thoughtful web design.
-        Currently looking for a software engineering internship focused on frontend development,
-        game development, or interactive applications.
-    </p>
+            <p>
+                Hi, I'm Anna — a Software Engineering student at Fontys University of Applied Sciences who enjoys
+                turning ideas into interactive digital experiences. I've worked on web and mobile applications, games,
+                and collaborative software projects, with a particular interest in frontend development and creative
+                technology.
+            </p>
 
-    <div class="hero-buttons">
-        <a class="button" href="#projects">
-            View my work
-        </a>
+            <div class="hero-buttons">
+                <a class="button" href="#projects">
+                    View my work
+                </a>
 
-        <a class="button secondary"
-           href="docs/Anna Zhakhyan_CV.pdf"
-           target="_blank">
-            Download CV
-        </a>
-    </div>
+                <a class="button secondary" href="docs/Anna Zhakhyan_CV.pdf" target="_blank">
+                    Download CV
+                </a>
+            </div>
 
-</div>
+        </div>
 
-<div class="polaroid me-polaroid animate">
-    <img src="images/me.jpg" alt="Anna Zhakhyan">
-    <span>Anna, probably right before debugging</span>
+        <div class="polaroid me-polaroid animate">
+            <img src="images/me.jpg" alt="Anna Zhakhyan">
+            <span>Anna, probably right before debugging</span>
 
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="container section">
+    <!-- WORK -->
+    <section id="projects" class="container section work-section">
 
-        <h1>Projects</h1>
+        <h1>Selected Work</h1>
 
-        <!-- my PROJECTS -->
-        <h2 class="section-label">Featured</h2>
+        <p class="section-intro">
+            A collection of university, personal, and professional projects
+            I've worked on throughout my Software Engineering studies.
+        </p>
 
-        <div class="card project-card featured animate">
-            <div class="polaroid large">
-                <img src="images/drifttherift.png" alt="Drift the Rift">
-                <span>Drift the Rift</span>
+
+        <!-- =========================
+         GAMUCATEX internshippy
+    ========================== -->
+
+        <h2 class="section-label">01 · Professional Experience</h2>
+
+        <article class="work-card internship-card animate">
+
+            <div class="work-image">
+                <img src="images/getsitecontrol__convert-video-to-gif__free (6) copy.gif"
+                    alt="Game development work created during my internship at GAMUCATEX">
+                <img src="images/DTR.jpeg" alt="Dev test repeat - game convention">
+                <img src="images/playstyle-GIF copy.gif" alt="A playstyle system devloped in Unity">
+                <span class="image-caption">
+                    Game development internship · Copenhagen, Denmark
+                </span>
             </div>
 
-            <div class="project-text">
+
+            <div class="work-content">
+
+                <p class="work-type">GAME DEVELOPMENT INTERNSHIP · 2026</p>
+
+                <h2>GAMUCATEX</h2>
+
+                <p class="work-subtitle">
+                    Game Development Intern · Unity · C# · Figma · Git
+                </p>
+
+                <p>
+                    During my five-month internship in Copenhagen, I worked alongside
+                    developers and designers on the prototyping, development, testing,
+                    and iteration of gameplay features.
+                </p>
+
+                <h3>What I worked on</h3>
+
+                <ul>
+                    <li>
+                        Collaborated with developers and designers to prototype
+                        gameplay mechanics in Unity.
+                    </li>
+
+                    <li>
+                        Developed gameplay features using C#.
+                    </li>
+
+                    <li>
+                        Designed wireframes and gameplay flows in Figma.
+                    </li>
+
+                    <li>
+                        Participated in feature testing, iteration, and Agile sprint
+                        planning.
+                    </li>
+
+                    <li>
+                        Used Git for version control and team collaboration.
+                    </li>
+                </ul>
+
+                <div class="work-tags">
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>Figma</span>
+                    <span>Git</span>
+                    <span>Agile</span>
+                </div>
+
+                <p class="confidential-note">
+                    Some project details and assets cannot be publicly displayed
+                    due to confidentiality requirements.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================
+         DTR
+    ========================== -->
+
+        <h2 class="section-label">02 · Game Development</h2>
+
+        <article class="work-card featured-work animate">
+
+            <div class="work-image">
+
+                <video src="images/DTR.mov" autoplay muted loop playsinline poster="images/drifttherift.png">
+                </video>
+                <img src="images/drifttherift.png" alt="-">
+                <span class="image-caption">
+                    Drift the Rift · Gameplay
+                </span>
+
+            </div>
+
+
+            <div class="work-content">
+
+                <p class="work-type">UNIVERSITY PROJECT · 2025</p>
+
                 <h2>Drift the Rift</h2>
-                <p>
-                    Card-based fantasy mobile game inspired by a D&D campaign.
-                    I worked on gameplay mechanics, character design, and documentation.
+
+                <p class="work-subtitle">
+                    Multiplayer Card Game · Godot · GDScript · JavaScript
                 </p>
-                <p><strong>Tech:</strong> GDScript, JavaScript, Godot</p>
-            </div>
-        </div>
 
-        <div class="card project-card featured animate">
-            <div class="polaroid large">
-                <video src="images/CityExplorer.mp4" autoplay muted loop playsinline></video>
-                <span>City Explorer</span>
-            </div>
-
-            <div class="project-text">
-                <h2>City Explorer Website</h2>
                 <p>
-                    Interactive website allowing users to explore culture, routes,
-                    and highlights of selected cities.
+                    Drift the Rift is a card-based fantasy game inspired by a
+                    D&D campaign, developed as part of a three-person team.
                 </p>
-                <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-            </div>
-        </div>
 
-        <!-- OTHER PROJECTS -->
+                <p>
+                    I contributed to gameplay functionality, character design,
+                    and project documentation while working collaboratively
+                    throughout development.
+                </p>
+
+                <h3>My contribution</h3>
+
+                <div class="contribution-grid">
+
+                    <div>
+                        <strong>Gameplay</strong>
+                        <p>
+                            Implemented gameplay functionality and contributed
+                            to the game's mechanics.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>Character Design</strong>
+                        <p>
+                            Contributed to the design and development of
+                            characters for the game.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>Documentation</strong>
+                        <p>
+                            Created and maintained documentation throughout
+                            the development process.
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>Teamwork</strong>
+                        <p>
+                            Worked as part of a three-person development team.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="work-tags">
+                    <span>Godot</span>
+                    <span>GDScript</span>
+                    <span>JavaScript</span>
+                    <span>Git</span>
+                </div>
+
+                <p class="private-project">
+                    <strong>Source code:</strong>
+                    Private university repository.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================
+         fun fact explorer
+    ========================== -->
+
+        <h2 class="section-label">03 · Web Development</h2>
+
+        <article class="work-card featured-work reverse animate">
+
+            <div class="work-image">
+
+                <video src="images/funFactvideo.mov" autoplay muted loop playsinline>
+                </video>
+
+                <span class="image-caption">
+                    Fun Fact Explorer · Website
+                </span>
+
+            </div>
+
+
+            <div class="work-content">
+
+                <p class="work-type">WEB PROJECT</p>
+
+                <h2>Fun Fact Explorer</h2>
+
+                <p class="work-subtitle">
+                    Interactive Website · HTML · CSS · JavaScript
+                </p>
+
+                <p>
+                    An interactive website designed to make learning about
+                    different topics more playful and engaging.
+                </p>
+
+                <p>
+                    The project combines a visual card-based interface with
+                    interactive content and an embedded AI chatbot.
+                </p>
+
+                <h3>What I focused on</h3>
+
+                <ul>
+                    <li>
+                        Designing an approachable and visually engaging interface.
+                    </li>
+
+                    <li>
+                        Building interactive elements using JavaScript.
+                    </li>
+
+                    <li>
+                        Structuring the website using semantic HTML and CSS.
+                    </li>
+
+                    <li>
+                        Integrating an AI chatbot into the experience.
+                    </li>
+                </ul>
+
+                <div class="work-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>AI</span>
+                </div>
+
+
+                <a href="https://annazhakhyan.github.io/FunFactExplorer/index.html" class="project-link" target="_blank"
+                    rel="noopener noreferrer">
+                    Visit project →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================
+         city explorer
+    ========================== -->
+
+        <h2 class="section-label">04 · Web Development</h2>
+
+        <article class="work-card featured-work animate">
+
+            <div class="work-image">
+
+                <video src="images/CityExplorer.mp4" autoplay muted loop playsinline>
+                </video>
+
+                <span class="image-caption">
+                    City Explorer · Interactive website
+                </span>
+
+            </div>
+
+
+            <div class="work-content">
+
+                <p class="work-type">WEB PROJECT</p>
+
+                <h2>City Explorer</h2>
+
+                <p class="work-subtitle">
+                    Interactive Website · HTML · CSS · JavaScript
+                </p>
+
+                <p>
+                    An interactive website allowing users to explore selected
+                    cities, their culture, routes, and highlights.
+                </p>
+
+                <p>
+                    The project focused on combining structured information
+                    with an engaging and accessible web interface.
+                </p>
+
+                <h3>Technologies</h3>
+
+                <div class="work-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =========================
+         OTHER PROJECTS
+    ========================== -->
+
         <h2 class="section-label">Other Projects</h2>
 
-        <div class="project-grid">
+        <div class="other-projects-grid">
 
-            <div class="mini-project animate">
-                <img src="images/homecooked.png" alt="Homecooked">
-                <h3>Homecooked</h3>
-                <p>
-                    iOS app connecting students and food lovers through shared
-                    home-cooked meals.
-                </p>
-                <p><strong>Tech:</strong> Swift, TypeScript</p>
-            </div>
 
-            <div class="mini-project animate">
-                <img src="images/songify.png" alt="Songify">
-                <h3>Songify</h3>
-                <p>
-                    Music streaming platform prototype with front-end and
-                    server-side logic.
-                </p>
-                <p><strong>Tech:</strong> HTML, CSS, PHP</p>
-            </div>
+            <!-- HOMECOOKED -->
+
+            <article class="other-project animate">
+
+                <div class="other-project-image">
+                    <img src="images/homecooked.png" alt="HomeCooked mobile application">
+                </div>
+
+                <div class="other-project-content">
+
+                    <p class="work-type">MOBILE DEVELOPMENT · 2024</p>
+
+                    <h2>HomeCooked</h2>
+
+                    <p>
+                        A mobile application designed to help students organize
+                        cooking events and connect with others through shared
+                        meals.
+                    </p>
+
+                    <div class="work-tags">
+                        <span>Swift</span>
+                        <span>TypeScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SONGIFY -->
+
+            <article class="other-project animate">
+
+                <div class="other-project-image">
+                    <img src="images/songify.png" alt="Songify music streaming website">
+                </div>
+
+                <div class="other-project-content">
+
+                    <p class="work-type">WEB DEVELOPMENT · 2024</p>
+
+                    <h2>Songify</h2>
+
+                    <p>
+                        A music streaming website prototype combining frontend
+                        design with server-side functionality.
+                    </p>
+
+                    <div class="work-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Dino run -->
+<article class="other-project animate">
+
+    <div class="other-project-image">
+
+        <video
+            src="images/dinoGame.mov"
+            autoplay
+            muted
+            loop
+            playsinline>
+        </video>
+
+    </div>
+
+    <div class="other-project-content">
+
+        <p class="work-type">MINI GAME DEVELOPMENT · 2024</p>
+
+        <h2>Dino Run</h2>
+
+        <p>
+            A mobile game focused on a dinosaur running and dodging obstacles.
+        </p>
+
+        <div class="work-tags">
+            <span>Unity</span>
+            <span>C#</span>
+        </div>
+
+    </div>
+
+</article>
+
+
 
         </div>
+
+
+        <!-- =========================
+         PROJECT NOTE
+    ========================== -->
+
+        <div class="portfolio-note animate">
+
+            <p>
+                Many of my university projects are stored in private repositories
+                because of university project restrictions. Where source code
+                cannot be shared, I've included screenshots, videos, and
+                explanations of my contribution instead.
+            </p>
+
+        </div>
+
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="container section">
-        <h1>Skills & Tools</h1>
+    <!-- =========================
+     ABOUT
+========================== -->
 
-        <div class="card animate">
-            <h2>Programming</h2>
-            <ul>
-                <li>HTML & CSS (advanced)</li>
-                <li>JavaScript (intermediate)</li>
-                <li>Java (intermediate)</li>
-                <li>GDScript (advanced)</li>
-                <li>Swift (beginner)</li>
-                <li>SQL & PHP</li>
-            </ul>
+    <section id="about" class="container section about-section">
+
+        <h1>About Me</h1>
+
+        <div class="about-layout">
+
+            <!-- PHOTO -->
+
+            <div class="about-image polaroid">
+
+                <img src="images/meagain.JPG" alt="Anna Zhakhyan">
+            
+                <img src="images/about4.JPG" alt="Anna Zhakhyan">
+
+                <span>
+                    Software engineering student · Venlo
+                </span>
+
+            </div>
+
+
+            <!-- ABOUT TEXT -->
+
+            <div class="about-content">
+
+                <p class="about-intro">
+                    I'm Anna, a Software Engineering student at
+                    Fontys University of Applied Sciences in Venlo.
+                </p>
+
+                <p>
+                    Over the past few years, I've had the opportunity to work
+                    on a variety of projects ranging from websites and mobile
+                    applications to games and desktop software.
+                </p>
+
+                <p>
+                    I'm particularly interested in the creative side of software
+                    development — designing interfaces, experimenting with
+                    interactions, and turning an idea into something people can
+                    actually use.
+                </p>
+
+                <p>
+                    I've also gained professional experience through a game
+                    development internship in Copenhagen, where I worked with
+                    developers and designers on gameplay, prototyping, testing,
+                    and iteration.
+                </p>
+
+                <p>
+                    I'm currently exploring frontend development, web technologies,
+                    and interactive digital experiences while continuing to
+                    expand my technical skills.
+                </p>
+
+
+                <!-- QUICK FACTS -->
+
+                <div class="about-facts">
+
+                    <div class="about-fact">
+                        <span class="fact-label">Based in</span>
+                        <strong>Venlo, Netherlands</strong>
+                    </div>
+
+                    <div class="about-fact">
+                        <span class="fact-label">Studying</span>
+                        <strong>Software Engineering</strong>
+                    </div>
+
+                    <div class="about-fact">
+                        <span class="fact-label">University</span>
+                        <strong>Fontys University</strong>
+                    </div>
+
+                    <div class="about-fact">
+                        <span class="fact-label">Interested in</span>
+                        <strong>Frontend & Creative Tech</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="card rotate animate">
-            <h2>Tools</h2>
-            <ul>
-                <li>Git & GitHub</li>
-                <li>Godot Engine</li>
-                <li>VS Code</li>
-                <li>Figma</li>
-                <li>IntelliJ</li>
-                <li>Xcode</li>
-                <li>Unity Hub</li>
-                <li>Terminal</li>
 
+        <!-- HOBBIES -->
 
-            </ul>
-        </div>
+       
 
-        <div class="card animate">
-            <h2>Other</h2>
-            <ul>
-                <li>Game development</li>
-                <li>Object-oriented programming</li>
-                <li>Agile / Scrum teamwork</li>
-                <li>Cybersecurity fundamentals</li>
-                <li>Intercultural work</li>
-            </ul>
-        </div>
     </section>
-
-
 
     <script src="script.js"></script>
 
-    <footer id="contact" class="contact-footer">
+    <!-- =========================
+     CONNECT
+========================== -->
 
-        <h1>Let’s Connect</h1>
+    <section id="contact" class="connect-section">
 
-        <p><strong>Email:</strong> annazhakhyan@gmail.com</p>
-        <p><strong>Location:</strong> Venlo, Netherlands</p>
+        <div class="connect-content">
+
+            <p class="connect-label">HAVE A PROJECT IN MIND?</p>
+
+            <h1>Let's Connect</h1>
+
+            <p class="connect-intro">
+                Whether you'd like to talk about a project, an internship,
+                or just say hello, I'd love to hear from you.
+            </p>
+
+
+            <div class="connect-links">
+
+                <a href="mailto:annazhakhyan@gmail.com" class="connect-button">
+                    Email me
+                </a>
+
+                <a href="https://www.linkedin.com/in/anna-zhakhyan-/" target="_blank" rel="noopener noreferrer"
+                    class="connect-button secondary">
+                    LinkedIn
+                </a>
+
+                <a href="https://github.com/AnnaZhakhyan" target="_blank" rel="noopener noreferrer"
+                    class="connect-button secondary">
+                    GitHub
+                </a>
+
+            </div>
+
+
+            <div class="connect-details">
+
+                <span>Venlo, Netherlands</span>
+
+                <span>·</span>
+
+                <a href="mailto:annazhakhyan@gmail.com">
+                    annazhakhyan@gmail.com
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
 
         <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/AnnaZhakhyan" target="_blank">
-                github.com/AnnaZhakhyan
-            </a>
+            Designed & built by Anna Zhakhyan
+        </p>
+
+        <p>
+            2026, Anna Zhakhyan
         </p>
 
     </footer>
