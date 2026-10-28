@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna Zhakhyan</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,24 +13,22 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- navbar -->
+    <!-- NAVBAR -->
     <nav class="navbar">
         <a href="#hero">Home</a>
-        <a href="#work">Work</a>
+        <a href="#projects">Work</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
 
-
+    <!-- HERO -->
     <section id="hero" class="container section hero">
         <div>
-
             <h1>
                 Software Engineering<br>
                 & <span>Web Design</span>
@@ -42,21 +42,17 @@
             </p>
 
             <div class="hero-buttons">
-                <a class="button" href="#projects">
-                    View my work
-                </a>
-
+                <a class="button" href="#projects">View my work</a>
             </div>
-
         </div>
 
         <div class="polaroid me-polaroid animate">
             <img src="images/me.jpeg" alt="Anna Zhakhyan">
             <span>Anna, probably right before debugging</span>
-
+        </div>
     </section>
 
-    <!-- WORK -->
+    <!-- SELECTED WORK -->
     <section id="projects" class="container section work-section">
 
         <h1>Selected Work</h1>
@@ -66,25 +62,26 @@
             I've worked on throughout my Software Engineering studies.
         </p>
 
-
-        <!-- =========================
-         GAMUCATEX internshippy
-    ========================== -->
-
-        <h2 class="section-label">01 · Professional Experience</h2>
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <h2 class="section-label">Professional Experience</h2>
 
         <article class="work-card internship-card animate">
 
             <div class="work-image">
-                <img src="images/getsitecontrol__convert-video-to-gif__free (6) copy.gif"
+                <img
+                    src="images/getsitecontrol__convert-video-to-gif__free (6) copy.gif"
                     alt="Game development work created during my internship at GAMUCATEX">
-                <img src="images/DTR.jpeg" alt="Dev test repeat - game convention">
-                <img src="images/playstyle-GIF copy.gif" alt="A playstyle system devloped in Unity">
+
+                <img src="images/DTR.jpeg" alt="Dev test repeat game convention">
+
+                <img
+                    src="images/playstyle-GIF copy.gif"
+                    alt="A playstyle system developed in Unity">
+
                 <span class="image-caption">
                     Game development internship · Copenhagen, Denmark
                 </span>
             </div>
-
 
             <div class="work-content">
 
@@ -109,23 +106,13 @@
                         Collaborated with developers and designers to prototype
                         gameplay mechanics in Unity.
                     </li>
-
-                    <li>
-                        Developed gameplay features using C#.
-                    </li>
-
-                    <li>
-                        Designed wireframes and gameplay flows in Figma.
-                    </li>
-
+                    <li>Developed gameplay features using C#.</li>
+                    <li>Designed wireframes and gameplay flows in Figma.</li>
                     <li>
                         Participated in feature testing, iteration, and Agile sprint
                         planning.
                     </li>
-
-                    <li>
-                        Used Git for version control and team collaboration.
-                    </li>
+                    <li>Used Git for version control and team collaboration.</li>
                 </ul>
 
                 <div class="work-tags">
@@ -142,32 +129,133 @@
                 </p>
 
             </div>
-
         </article>
 
-        <!-- AFTER12 -->
+        <!-- 01 · STRUMMY -->
         <h2 class="section-label">01 · Frontend Development</h2>
 
         <article class="work-card featured-work animate">
 
-
             <div class="work-media">
 
                 <div class="work-image">
-                    <img src="images/after12:2.png" alt="AFTER12 festival website experience page" loading="lazy">
-                    <span class="image-caption">AFTER12 experience page</span>
-                </div>
+                    <img
+                        src="images/strummy.gif"
+                        alt="Strummy acoustic guitar song discovery website"
+                        loading="lazy">
 
+                    <span class="image-caption">
+                        Strummy · Acoustic guitar song discovery
+                    </span>
+                </div>
                 <div class="work-image">
-                    <img src="images/after12Video.gif" controls muted playsinline preload="metadata"
-                        aria-label="AFTER12 website walkthrough">
-                    Your browser does not support the video element.
-                    </img>
-                    <span class="image-caption">AFTER12 · Website walkthrough</span>
+                    <img
+                        src="images/guitar.jpeg"
+                        alt="Guitar image"
+                        loading="lazy">
+
                 </div>
 
             </div>
 
+            <div class="work-content">
+
+                <p class="work-type">PERSONAL FRONTEND PROJECT · 2026</p>
+
+                <h2>Strummy</h2>
+
+                <p class="work-subtitle">
+                    Acoustic Guitar Website · Render backend · API integration · React · JavaScript · CSS · Vite
+                </p>
+
+                <p>
+                    Strummy is a cozy song discovery website designed for beginners
+                    learning acoustic guitar. It helps users discover songs to play,
+                    listen to music previews, and explore chord charts in one place.
+                </p>
+
+                <p>
+                    The visual direction is inspired by the comfort of playing
+                    acoustic guitar at home, with a warm colour palette and a
+                    welcoming interface designed to make learning songs feel
+                    approachable.
+                </p>
+
+                <h3>What I worked on</h3>
+
+                <ul>
+                    <li>
+                        Designed and developed the frontend for a beginner-friendly
+                        acoustic guitar song discovery experience.
+                    </li>
+                    <li>
+                        Integrated music search and audio previews using the iTunes
+                        Search API.
+                    </li>
+                    <li>
+                        Connected the website to a chord-search backend to help users
+                        find chord charts for songs.
+                    </li>
+                    <li>
+                        Built the application using React and Vite, with responsive
+                        styling in CSS.
+                    </li>
+                </ul>
+
+                <div class="work-tags">
+                    <span>React</span>
+                    <span>JavaScript</span>
+                    <span>CSS</span>
+                    <span>Vite</span>
+                    <span>REST APIs</span>
+                    <span>GitHub Pages</span>
+                </div>
+
+                <a
+                    href="https://annazhakhyan.github.io/strummy/"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Visit live website →
+                </a>
+
+                <a
+                    href="https://github.com/AnnaZhakhyan/strummy"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View source code →
+                </a>
+
+            </div>
+        </article>
+
+        <!-- 02 · AFTER12 -->
+        <h2 class="section-label">02 · Frontend Development</h2>
+
+        <article class="work-card featured-work animate">
+
+            <div class="work-media">
+
+                <div class="work-image">
+                    <img
+                        src="images/after12:2.png"
+                        alt="AFTER12 festival website experience page"
+                        loading="lazy">
+
+                    <span class="image-caption">AFTER12 experience page</span>
+                </div>
+
+               <div class="work-image">
+                    <img
+                        src="images/after12Video.gif"
+                        alt="AFTER12 festival website walkthrough"
+                        loading="lazy">
+
+                    <span class="image-caption">AFTER12 walkthrough</span>
+                </div>
+
+            </div>
 
             <div class="work-content">
 
@@ -198,17 +286,14 @@
                         Designed a visual identity using a warm, editorial-inspired
                         colour palette and expressive typography.
                     </li>
-
                     <li>
                         Built reusable React components and separate pages for
                         the festival experience, schedule, and tickets.
                     </li>
-
                     <li>
                         Created interactive artist cards with an expandable
                         artist spotlight.
                     </li>
-
                     <li>
                         Added page navigation, hover effects, transitions,
                         and responsive layouts.
@@ -224,12 +309,18 @@
                     <span>Responsive Design</span>
                 </div>
 
-                <a href="https://annazhakhyan.github.io/After12/" class="project-link" target="_blank"
+                <a
+                    href="https://annazhakhyan.github.io/After12/"
+                    class="project-link"
+                    target="_blank"
                     rel="noopener noreferrer">
                     View live website →
                 </a>
 
-                <a href="https://github.com/AnnaZhakhyan/After12/tree/main" class="project-link" target="_blank"
+                <a
+                    href="https://github.com/AnnaZhakhyan/After12/tree/main"
+                    class="project-link"
+                    target="_blank"
                     rel="noopener noreferrer">
                     View source code →
                 </a>
@@ -240,30 +331,21 @@
                 </p>
 
             </div>
-
         </article>
 
-
-
-        <!-- =========================
-         fun fact explorer
-    ========================== -->
-
-        <h2 class="section-label">02 · Web Development</h2>
+        <!-- 03 · FUN FACT EXPLORER -->
+        <h2 class="section-label">03 · Web Development</h2>
 
         <article class="work-card featured-work reverse animate">
 
             <div class="work-image">
-
                 <video src="images/funFactvideo.mov" autoplay muted loop playsinline>
                 </video>
 
                 <span class="image-caption">
                     Fun Fact Explorer · Website
                 </span>
-
             </div>
-
 
             <div class="work-content">
 
@@ -288,21 +370,10 @@
                 <h3>What I focused on</h3>
 
                 <ul>
-                    <li>
-                        Designing an approachable and visually engaging interface.
-                    </li>
-
-                    <li>
-                        Building interactive elements using JavaScript.
-                    </li>
-
-                    <li>
-                        Structuring the website using semantic HTML and CSS.
-                    </li>
-
-                    <li>
-                        Integrating an AI chatbot into the experience.
-                    </li>
+                    <li>Designing an approachable and visually engaging interface.</li>
+                    <li>Building interactive elements using JavaScript.</li>
+                    <li>Structuring the website using semantic HTML and CSS.</li>
+                    <li>Integrating an AI chatbot into the experience.</li>
                 </ul>
 
                 <div class="work-tags">
@@ -312,26 +383,27 @@
                     <span>AI</span>
                 </div>
 
-
-                <a href="https://annazhakhyan.github.io/FunFactExplorer/index.html" class="project-link" target="_blank"
+                <a
+                    href="https://annazhakhyan.github.io/FunFactExplorer/index.html"
+                    class="project-link"
+                    target="_blank"
                     rel="noopener noreferrer">
                     Visit project →
                 </a>
-                <a href="https://github.com/AnnaZhakhyan/FunFactExplorer" class="project-link" target="_blank"
+
+                <a
+                    href="https://github.com/AnnaZhakhyan/FunFactExplorer"
+                    class="project-link"
+                    target="_blank"
                     rel="noopener noreferrer">
                     View source code →
                 </a>
 
             </div>
-
         </article>
 
-
-        <!-- =========================
-         city explorer
-    ========================== -->
-
-        <h2 class="section-label">03 · Web Development</h2>
+        <!-- 04 · CITY EXPLORER -->
+        <h2 class="section-label">04 · Web Development</h2>
 
         <article class="work-card featured-work animate">
 
@@ -343,9 +415,7 @@
                 <span class="image-caption">
                     City Explorer · Interactive website
                 </span>
-
             </div>
-
 
             <div class="work-content">
 
@@ -375,35 +445,39 @@
                     <span>JavaScript</span>
                 </div>
 
-                <a href="https://github.com/AnnaZhakhyan/CityGuide---InternetProgramming" class="project-link"
-                    target="_blank" rel="noopener noreferrer">
+                <a
+                    href="https://github.com/AnnaZhakhyan/CityGuide---InternetProgramming"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     View source code →
                 </a>
 
             </div>
-
         </article>
 
-
-        <!-- =========================
-         DTR
-    ========================== -->
-
-        <h2 class="section-label">04 · Game Development</h2>
+        <!-- 05 · DRIFT THE RIFT -->
+        <h2 class="section-label">05 · Game Development</h2>
 
         <article class="work-card featured-work animate">
 
             <div class="work-image">
 
-                <video src="images/DTR.mov" autoplay muted loop playsinline poster="images/drifttherift.png">
+                <video
+                    src="images/DTR.mov"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    poster="images/drifttherift.png">
                 </video>
-                <img src="images/drifttherift.png" alt="-">
+
+                <img src="images/drifttherift.png" alt="Drift the Rift game artwork">
+
                 <span class="image-caption">
                     Drift the Rift · Gameplay
                 </span>
-
             </div>
-
 
             <div class="work-content">
 
@@ -416,10 +490,10 @@
                 </p>
 
                 <p>
-                    Drift the Rift is a card-based fantasy game inspired by a D&D campaign, developed as part of a
-                    three-person team. The backend is hosted using a PostgreSQL database to manage
-                    real-time player lobbies, sync game states, and maintain a global player leaderboard.
-
+                    Drift the Rift is a card-based fantasy game inspired by a D&D campaign,
+                    developed as part of a three-person team. The backend uses a PostgreSQL
+                    database to manage player lobbies, synchronise game states, and maintain
+                    a global player leaderboard.
                 </p>
 
                 <p>
@@ -479,27 +553,18 @@
                 </p>
 
             </div>
-
         </article>
 
-
-
-
-        <!-- =========================
-         OTHER PROJECTS
-    ========================== -->
-
+        <!-- OTHER PROJECTS -->
         <h2 class="section-label">Other Projects</h2>
 
         <div class="other-projects-grid">
 
-
             <!-- HOMECOOKED -->
-
             <article class="other-project animate">
 
                 <div class="other-project-image">
-                    <img src="images/homecooked.png" alt="HomeCooked mobile application">
+                    <img src="images/homecooked.png" alt="HomeCooked mobile application" loading="lazy">
                 </div>
 
                 <div class="other-project-content">
@@ -509,10 +574,10 @@
                     <h2>HomeCooked</h2>
 
                     <p>
-                        A full-stack mobile application designed to help students organize local cooking events, share
-                        recipes, and connect through shared meals. The backend is powered by Firebase, utilizing a
-                        real-time database to manage user profiles, host event listings, and handle live attendee RSVPs.
-
+                        A full-stack mobile application designed to help students organize
+                        local cooking events, share recipes, and connect through shared meals.
+                        The backend is powered by Firebase, using a real-time database to
+                        manage user profiles, event listings, and attendee RSVPs.
                     </p>
 
                     <div class="work-tags">
@@ -522,16 +587,13 @@
                     </div>
 
                 </div>
-
             </article>
 
-
             <!-- SONGIFY -->
-
             <article class="other-project animate">
 
                 <div class="other-project-image">
-                    <img src="images/songify.png" alt="Songify music streaming website">
+                    <img src="images/songify.png" alt="Songify music streaming website" loading="lazy">
                 </div>
 
                 <div class="other-project-content">
@@ -542,28 +604,26 @@
 
                     <p>
                         A music streaming website prototype combining frontend
-                        design with server-side functionality. The backend hosted with Postgre SQL.
+                        design with server-side functionality. The backend uses
+                        PostgreSQL.
                     </p>
 
                     <div class="work-tags">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>PHP</span>
+                        <span>PostgreSQL</span>
                     </div>
 
                 </div>
-
             </article>
 
-
-            <!-- Dino run -->
+            <!-- DINO RUN -->
             <article class="other-project animate">
 
                 <div class="other-project-image">
-
                     <video src="images/dinoGame.mov" autoplay muted loop playsinline>
                     </video>
-
                 </div>
 
                 <div class="other-project-content">
@@ -582,18 +642,11 @@
                     </div>
 
                 </div>
-
             </article>
-
-
 
         </div>
 
-
-        <!-- =========================
-         PROJECT NOTE
-    ========================== -->
-
+        <!-- PROJECT NOTE -->
         <div class="portfolio-note animate">
 
             <p>
@@ -607,32 +660,21 @@
 
     </section>
 
-    <!-- =========================
-     ABOUT
-========================== -->
-
+    <!-- ABOUT -->
     <section id="about" class="container section about-section">
 
         <h1>About Me</h1>
 
         <div class="about-layout">
 
-            <!-- PHOTO -->
-
             <div class="about-image polaroid">
-
                 <img src="images/meagain.JPG" alt="Anna Zhakhyan">
-
                 <img src="images/about4.JPG" alt="Anna Zhakhyan">
 
                 <span>
                     Software engineering student · Venlo
                 </span>
-
             </div>
-
-
-            <!-- ABOUT TEXT -->
 
             <div class="about-content">
 
@@ -667,9 +709,6 @@
                     expand my technical skills.
                 </p>
 
-
-                <!-- QUICK FACTS -->
-
                 <div class="about-facts">
 
                     <div class="about-fact">
@@ -693,24 +732,11 @@
                     </div>
 
                 </div>
-
             </div>
-
         </div>
-
-
-        <!-- HOBBIES -->
-
-
-
     </section>
 
-    <script src="script.js"></script>
-
-    <!-- =========================
-     CONNECT
-========================== -->
-
+    <!-- CONNECT -->
     <section id="contact" class="connect-section">
 
         <div class="connect-content">
@@ -724,52 +750,46 @@
                 or just say hello, I'd love to hear from you.
             </p>
 
-
             <div class="connect-links">
 
                 <a href="mailto:annazhakhyan@gmail.com" class="connect-button">
                     Email me
                 </a>
 
-                <a href="https://www.linkedin.com/in/anna-zhakhyan/" target="_blank" rel="noopener noreferrer"
+                <a
+                    href="https://www.linkedin.com/in/anna-zhakhyan/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="connect-button secondary">
                     LinkedIn
                 </a>
 
-                <a href="https://github.com/AnnaZhakhyan" target="_blank" rel="noopener noreferrer"
+                <a
+                    href="https://github.com/AnnaZhakhyan"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="connect-button secondary">
                     GitHub
                 </a>
 
             </div>
 
-
             <div class="connect-details">
-
                 <span>Venlo, Netherlands</span>
-
                 <span>·</span>
-
                 <a href="mailto:annazhakhyan@gmail.com">
                     annazhakhyan@gmail.com
                 </a>
-
             </div>
 
         </div>
-
     </section>
 
-
     <footer>
-
-        <p>
-            Designed & built by Anna Zhakhyan
-        </p>
-
-
+        <p>Designed & built by Anna Zhakhyan</p>
     </footer>
 
-</body>
+    <script src="script.js"></script>
 
+</body>
 </html>
